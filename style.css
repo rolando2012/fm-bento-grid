@@ -36,6 +36,7 @@ body {
     font-weight: 400;
     min-height: 100vh;
     background-color: hsl(0, 0%, 96%);
+    color: var(--black);
 }
 
 h1, h2 {
@@ -44,11 +45,11 @@ h1, h2 {
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 p {
@@ -57,6 +58,72 @@ p {
 
 img {
     display: block;
-    object-fit: cover;
     max-width: 100%;
+}
+
+.bento-grid {
+    display: grid;
+    margin: 1rem;
+    gap: 1.8rem;
+}
+
+.bento-grid > article {
+    border-radius: 0.75rem;
+}
+
+.review-section {
+    padding: 2.5rem;
+    background-color: var(--purple-500);
+    color: var(--white);
+    text-align: center;
+}
+
+.accounts-section {
+    background-color: var(--white);
+    padding: 1.1rem;
+}
+
+.posting-section {
+    padding: 1.1rem;
+    padding-bottom: 0;
+    background-color: var(--yellow-500);
+}
+
+.schedule-social {
+    padding: 2rem 1.1rem;
+    background-color: var(--purple-100);
+}
+
+.grow {
+    padding: 1.3rem 3.5rem;
+    background-color: var(--purple-500);
+    color: var(--white)
+}
+
+.audience {
+    padding: 1.6rem;
+    background-color: var(--white);
+}
+
+.create {
+    padding: 1.6rem;
+    background-color: var(--yellow-100);
+}
+
+.content-ai {
+    padding: 1.3rem;
+    background-color: var(--yellow-500);
+}
+
+.attribution {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--purple-500);
+    font-size: inherit;
 }
