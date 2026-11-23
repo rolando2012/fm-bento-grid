@@ -106,6 +106,10 @@ img {
     padding: 1.1rem;
     padding-bottom: 0;
     background-color: var(--yellow-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.1rem;
 }
 
 .posting-section__title{
@@ -113,17 +117,16 @@ img {
 }
 
 .posting-section__schedule {
-    position: relative;
-    top: 1.35rem;
-    height: auto;
     width: 14.0625rem;
+    height: auto;
+    margin-bottom: -1.5rem;
 }
 
 .schedule-social {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 1.1rem;
+    padding: 2rem;
     background-color: var(--purple-100);
 }
 
@@ -143,7 +146,6 @@ img {
 
 .grow__title {
     margin-top: 2.6rem;
-    font-size: 2rem;
     text-align: center;
 }
 
@@ -188,7 +190,7 @@ img {
 }
 
 .content-ai {
-    padding: 1.3rem;
+    padding: 1.3rem 0.5rem 1.3rem 1rem;
     background-color: var(--yellow-500);
 }
 
@@ -213,4 +215,157 @@ img {
     text-decoration: none;
     color: var(--purple-500);
     font-size: inherit;
+}
+
+@media (min-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin: 0.5rem;
+        grid-template-areas:
+            "create  review   review   schedule"
+            "create  accounts posting  schedule"
+            "content accounts posting  schedule"
+            "content audience grow     grow";
+    }
+
+    .create {
+        grid-area: create;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .create__title {
+        font-size: 2.3rem;
+    }
+
+    .content-ai {
+        grid-area: content;
+    }
+
+    .content-ai__title {
+        font-size: 1.5rem;
+    }
+
+    .review-section {
+        grid-area: review;
+        padding: 3rem;
+    }
+
+    .review-section__title {
+        font-size: 4rem;
+    }
+
+    .schedule-social {
+        grid-area: schedule;
+    }
+
+    .schedule-social__text {
+        text-align: left;
+    }
+
+    .schedule-social__graphic {
+        height: auto;
+        width: 170%;
+        max-width: none;
+    }
+
+    .accounts-section {
+        grid-area: accounts;
+    }
+
+    .accounts-section__img-social {
+        width: 148%;
+        max-width: none;
+    }
+
+    .audience {
+        grid-area: audience;
+        padding: 1rem;
+    }
+
+    .audience__percentage {
+        font-size: 3.5rem;
+    }
+
+    .audience__title{
+        font-size: 0.95rem;
+    }
+
+    .posting-section {
+        grid-area: posting;
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .posting-section__schedule {
+        width: 100%;
+        margin-bottom: -4rem;
+    } 
+
+    .grow {
+        grid-area: grow;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .grow__title {
+        font-size: 2rem;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .grow__img {
+        height: auto;
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bento-grid {
+        max-width: 70rem;
+        margin: 1rem auto;
+        gap: 1.5rem;
+    }
+
+    .accounts-section{
+        padding: 1.6rem;
+    }
+
+    .accounts-section__title {
+        font-size: 2rem
+    }
+
+    .posting-section__title {
+        font-size: 2rem;
+    }
+
+    .grow__img {
+        width: 55%;
+    }
+
+    .content-ai__title {
+        font-size: 2.75rem;
+    }
+
+    .audience {
+        padding: 1.8rem;
+    }
+
+    .audience__percentage {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .audience__title{
+        font-size: var(--font-p);
+        margin-bottom: 3rem;
+    }
+
+    .create__title {
+        font-size: 2.6rem;
+    }
 }
