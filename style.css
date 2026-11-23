@@ -45,11 +45,11 @@ h1, h2 {
 }
 
 h1{
-    font-size: 2.7rem;
+    font-size: 2.8rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 }
 
 p {
@@ -69,6 +69,7 @@ img {
 
 .bento-grid > article {
     border-radius: 0.75rem;
+    overflow: hidden;
 }
 
 .review-section {
@@ -78,9 +79,27 @@ img {
     text-align: center;
 }
 
+.review-section__title {
+    margin-bottom: 1.2rem;
+}
+
+.review-section__span {
+    color: var(--yellow-500);
+}
+
+.review-section__stars{
+    height: 2rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
 .accounts-section {
     background-color: var(--white);
     padding: 1.1rem;
+}
+
+.accounts-section__img-social {
+    margin: 0.5rem;
 }
 
 .posting-section {
@@ -89,9 +108,31 @@ img {
     background-color: var(--yellow-500);
 }
 
+.posting-section__title{
+    font-size: 1.55rem;
+}
+
+.posting-section__schedule {
+    position: relative;
+    top: 1.35rem;
+    height: auto;
+    width: 14.0625rem;
+}
+
 .schedule-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 2rem 1.1rem;
     background-color: var(--purple-100);
+}
+
+.schedule-social__title {
+    font-size: 1.55rem;
+}
+
+.schedule-social__text {
+    text-align: center;
 }
 
 .grow {
@@ -100,9 +141,31 @@ img {
     color: var(--white)
 }
 
+.grow__title {
+    margin-top: 2.6rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .audience {
     padding: 1.6rem;
     background-color: var(--white);
+}
+
+.audience__percentage{
+    display: block;
+    margin-bottom: 1.1rem;
+    font-size: 3rem;
+}
+
+.audience__title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.audience__img {
+    height: auto;
+    width: 11.25rem;
 }
 
 .create {
@@ -110,9 +173,33 @@ img {
     background-color: var(--yellow-100);
 }
 
+.create__title {
+    font-size: 1.9rem;
+    margin-bottom: 1.6rem;
+}
+
+.create__img{
+    height: auto;
+    width: 12.5rem;
+}
+
+.create__em {
+    color: var(--purple-500);
+}
+
 .content-ai {
     padding: 1.3rem;
     background-color: var(--yellow-500);
+}
+
+.content-ai__title {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.content-ai__img {
+    height: auto;
+    width: 15rem;
 }
 
 .attribution {
@@ -122,7 +209,7 @@ img {
     text-align: center;
 }
 
-.attribution a {
+.attribution > a {
     text-decoration: none;
     color: var(--purple-500);
     font-size: inherit;
